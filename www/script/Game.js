@@ -213,23 +213,20 @@ ENGINE.Game = {
     // Update player position
     var pos = [null, null];
 
-    if(app.controls.up) {
+    if(app.controls.up || app.controls.swipeUp) {
       pos = [this.player.x, this.player.y - 1];
     }
-    else if(app.controls.right) {
+    else if(app.controls.right || app.controls.swipeRight) {
       pos = [this.player.x + 1, this.player.y];
     }
-    else if(app.controls.down) {
+    else if(app.controls.down || app.controls.swipeDown) {
       pos = [this.player.x, this.player.y + 1];
     }
-    else if(app.controls.left) {
+    else if(app.controls.left || app.controls.swipeLeft) {
       pos = [this.player.x - 1, this.player.y];
     }
 
-    app.controls.up = false;
-    app.controls.right = false;
-    app.controls.down = false;
-    app.controls.left = false;
+    app.controls.reset();
 
     // Player movement
     if(pos[0] != null && pos[1] != null && (this.room.isWalkableTile(pos[0], pos[1]) || this.room.isSpikes(pos))) {

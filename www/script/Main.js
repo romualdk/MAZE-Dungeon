@@ -24,11 +24,11 @@ var app = new PLAYGROUND.Application({
 
 
   swipeAngles: [
-      ["up", 235,305],
-      ["right", 325, 360],
-      ["right", 0, 35],
-      ["down", 55, 125],
-      ["left", 145, 215]
+      ["swipeUp", 235,305],
+      ["swipeRight", 325, 360],
+      ["swipeRight", 0, 35],
+      ["swipeDown", 55, 125],
+      ["swipeLeft", 145, 215]
     ],
 
   controls: {
@@ -36,16 +36,24 @@ var app = new PLAYGROUND.Application({
     right: false,
     down: false,
     left: false,
+    swipeUp: false,
+    swipeRight: false,
+    swipeDown: false,
+    swipeLeft: false,
     a: false,
 
     any: function() {
-      return this.up || this.right || this.down || this.left || this.a;
+      return this.up || this.right || this.down || this.left || this.swipeUp || this.swipeRight || this.swipeDown || this.swipeLeft || this.a;
     },
     reset: function() {
       this.up = false;
       this.right = false;
       this.down = false;
       this.left = false;
+      this.swipeUp = false;
+      this.swipeRight = false;
+      this.swipeDown = false;
+      this.swipeLeft = false;
       this.a = false;
     }
   },

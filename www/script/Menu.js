@@ -69,12 +69,12 @@ ENGINE.Menu = {
         }
 
 
-        if(app.controls.left && app.character < app.characters.length-1) {
+        if((app.controls.right || app.controls.swipeLeft) && app.character < app.characters.length-1) {
             app.character++;
             this.app.sound.play("MenuMove");
             this.updateState();
         }
-        else if(app.controls.right && app.character > 0) {
+        else if((app.controls.left || app.controls.swipeRight) && app.character > 0) {
             app.character--;
             this.app.sound.play("MenuMove");
             this.updateState();
@@ -82,18 +82,6 @@ ENGINE.Menu = {
         }
 
         app.controls.reset();
-
-/*
-        if(app.controls.up && this.currentOption > 0) {
-            this.app.sound.play("MenuMove");
-            this.currentOption--;
-            app.controls.up = false;
-        }
-        else if(app.controls.down && this.currentOption < this.options.length -1) {
-            this.app.sound.play("MenuMove");
-            this.currentOption++;
-            app.controls.down = false;
-        }*/
     },
 
 
