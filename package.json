@@ -1,0 +1,13 @@
+{
+    "name": "qrks.romualdk.mazedungeon",
+    "version": "1.0.0",
+    "displayName": "MAZE Dungeon",
+    "cordova": {
+        "platforms": [
+            "android"
+        ]
+    },
+    "dependencies": {
+        "cordova-android": "~6.1.2"
+    }
+}
