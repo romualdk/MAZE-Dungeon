@@ -35,7 +35,7 @@ Eventual platforms:  iOS, Facebook? Other?
 BUSINESS KIT
 ------------
 ### LIFECYCLE
-1. **Concepting (DONE)**
+**1. Concepting (DONE)**
 2. Testing **(IN PROGRESS)**
    - Name
    - Icon
