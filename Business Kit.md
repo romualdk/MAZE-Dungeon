@@ -37,32 +37,36 @@ BUSINESS KIT
 ### KEY QUESTIONS AND ANSWERS
 
 1. Audience
-...Players who likes puzzles, old style games with 8bit graphics - pixel art.
+
+   Players who likes puzzles, old style games with 8bit graphics - pixel art.
 2. Market trends
-...???
+
+   ???
 3. Something new?
-...Combining minesweeper with dungeon crawler and classic RPG (no elements yet - but can be included in fights)
+
+   Combining minesweeper with dungeon crawler and classic RPG (no elements yet - but can be included in fights)
 4. User experience
 5. Funding
-...Self-funding / No-funding
+
+   Self-funding / No-funding
 6. User interface best practices
-...- open quickly
-...- high quality graphics
-...- multiple devices
-...- multiple versions
-...- density-independent units
+   - open quickly
+   - high quality graphics
+   - multiple devices
+   - multiple versions
+   - density-independent units
 7. Storing data
-...localStorage
+   localStorage
 8. Permissions
-...- location
-......NO
-...- contacts
-......NO
-...- device IMEI
-......NO
+   - location
+      NO
+   - contacts
+      NO
+   - device IMEI
+      NO
 9. Testing
 10. Increase app engagement and installs
-...- over-the-air installs
+   - over-the-air installs
 11. Monetization
 ...- free app
 ......YES
