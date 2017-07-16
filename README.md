@@ -7,7 +7,7 @@ Rooms have spikes and doors where player has to use a switch to open certain doo
 
 http://romualdk.github.io/maze-dungeon/
 
-![alt text](https://raw.githubusercontent.com/romualdk/mazy-dungeon/master/other/preview.png "Mazy Dungeon")
+![alt text](https://raw.githubusercontent.com/romualdk/mazy-dungeon/master/other/preview2x.png "Mazy Dungeon")
 
 CURRENT STATE
 -------------
