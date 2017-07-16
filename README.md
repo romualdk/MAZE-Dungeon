@@ -5,7 +5,7 @@ A game about finding a way through a maze of dungeons.
 
 Rooms have spikes and doors where player has to use a switch to open certain door. Player has to avoid spikes - has info like in minesweeper (number of spikes near floor tile). The room is covered with fog of war - discovering floor tiles and collecting coins gives points.
 
-Can be played at: http://romualdk.github.io/maze-dungeon/
+http://romualdk.github.io/maze-dungeon/
 
 CURRENT STATE
 -------------
