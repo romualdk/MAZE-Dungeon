@@ -91,7 +91,7 @@ BUSINESS KIT
    - free app: YES
    - in-app purchases: unlock all characters
    - ads: fullscreen ad between levels
-12. Localization
+12. **Localization**
 
    OPTIONAL
 
