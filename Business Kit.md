@@ -8,8 +8,12 @@ The room is covered with fog of war - discovering floor tiles and collecting poi
 
 CURRENT STATE
 -------------
-Platforms: Web, Android, iOS?, Facebook? Other?
-To do list:
+Fully playable version.
+
+Platforms: Web, Android
+Eventual platforms:  iOS, Facebook? Other?
+
+### TO DO
 - Change logo (name)
 - Change icon
 - Message about current level and max reached level
@@ -21,16 +25,16 @@ To do list:
 - Admob ads
 - In-app purchase - buy all characters
         
-EVENTUAL EXTRAS
-------
+### EVENTUAL EXTRAS
 - Developer brand
 - Website
 - Free graphics (opengameart)
 - Online map generator
 - Online minecraft maze map generator
 
-KEY QUESTIONS AND ANSWERS
-=========================
+BUSINESS KIT
+------------
+### KEY QUESTIONS AND ANSWERS
 
 1. Audience
 ...Players who likes puzzles, old style games with 8bit graphics - pixel art.
@@ -69,8 +73,7 @@ KEY QUESTIONS AND ANSWERS
 12. Localization
 ...OPTIONAL
 
-LIFECYCLE
-=========
+### LIFECYCLE
 1. Concepting
 2. Testing
 ...- Name
