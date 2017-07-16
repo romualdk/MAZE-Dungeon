@@ -19,13 +19,14 @@ Eventual platforms:  iOS, Facebook? Other?
 - Change logo (name)
 - Change icon
 - Message about current level and max reached level
-- After death continue message (can continue game in current level)
+- After death continue message (can continue game in current level - but have to watch ad)
 - Progess state save (ie after every 5 levels)
 - Progression - more difficult maze
 - Boss fight
 - Minion fight??? Random minions in maze
 - Admob ads
 - In-app purchase - buy all characters
+- High score (ever and weekly, daily) - google play game service
         
 ### EVENTUAL EXTRAS
 - Developer brand
@@ -92,7 +93,7 @@ BUSINESS KIT
 11. **Monetization**
    - free app: YES
    - in-app purchases: unlock all characters
-   - ads: fullscreen ad between levels
+   - ads: fullscreen ad between levels (ie. after 5), also after death - watch ad to continue
 12. **Localization**
 
    OPTIONAL
