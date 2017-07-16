@@ -34,6 +34,28 @@ Eventual platforms:  iOS, Facebook? Other?
 
 BUSINESS KIT
 ------------
+### LIFECYCLE
+1. **Concepting (DONE)**
+2. Testing **(IN PROGRESS)**
+   - Name
+   - Icon
+   - Tell friends and family
+3. Launching
+   - App store listing
+      * high quality screenshots
+      * video
+      * good copy and right keywords
+   - Cross-promotions
+   - Social media and blogs
+4. Accelerating
+   - Featuring on the app stores
+   - Respond to user feedback and fix bugs quickly
+   - License your app to a publishing house
+5. Leveling
+   - Run paid in-app ad campaigns
+   - User remarketing to boost engagemenet and revenue
+6. Declining
+
 ### KEY QUESTIONS AND ANSWERS
 
 1. Audience
@@ -83,24 +105,3 @@ BUSINESS KIT
 12. Localization
    OPTIONAL
 
-### LIFECYCLE
-1. Concepting
-2. Testing
-   - Name
-   - Icon
-   - Tell friends and family
-3. Launching
-   - App store listing
-      * high quality screenshots
-      * video
-      * good copy and right keywords
-   - Cross-promotions
-   - Social media and blogs
-4. Accelerating
-   - Featuring on the app stores
-   - Respond to user feedback and fix bugs quickly
-   - License your app to a publishing house
-5. Leveling
-   - Run paid in-app ad campaigns
-   - User remarketing to boost engagemenet and revenue
-6. Declining
