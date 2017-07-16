@@ -10,6 +10,7 @@ CURRENT STATE
 Fully playable version.
 
 Platforms: Web, Android
+
 Eventual platforms:  iOS, Facebook? Other?
 
 ### TO DO
