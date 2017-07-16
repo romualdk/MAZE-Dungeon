@@ -59,42 +59,48 @@ BUSINESS KIT
    localStorage
 8. Permissions
    - location
+   
       NO
    - contacts
+   
       NO
    - device IMEI
+   
       NO
 9. Testing
 10. Increase app engagement and installs
    - over-the-air installs
 11. Monetization
-...- free app
-......YES
-...- in-app purchases
-......unlock all characters
-...- ads
-......admob - betweeb levels
+   - free app
+
+      YES
+   - in-app purchases
+
+      unlock all characters
+   - ads
+
+      admob - betweeb levels
 12. Localization
-...OPTIONAL
+   OPTIONAL
 
 ### LIFECYCLE
 1. Concepting
 2. Testing
-...- Name
-...- Icon
-...- Tell friends and family
+   - Name
+   - Icon
+   - Tell friends and family
 3. Launching
-...- App store listing
-......- high quality screenshots
-......- video
-......- good copy and right keywords
-...- Cross-promotions
-...- Social media and blogs
+   - App store listing
+      * high quality screenshots
+      * video
+      * good copy and right keywords
+   - Cross-promotions
+   - Social media and blogs
 4. Accelerating
-...- Featuring on the app stores
-...- Respond to user feedback and fix bugs quickly
-...- License your app to a publishing house
+   - Featuring on the app stores
+   - Respond to user feedback and fix bugs quickly
+   - License your app to a publishing house
 5. Leveling
-...- Run paid in-app ad campaigns
-...- User remarketing to boost engagemenet and revenue
+   - Run paid in-app ad campaigns
+   - User remarketing to boost engagemenet and revenue
 6. Declining
