@@ -53,17 +53,32 @@ ENGINE.Game = {
   },
 
   gameover: function() {
-    app.roomNumber = 0;
-    app.state.dialog = new ENGINE.Dialog("Ooh! I'm dead.", 1 + app.character, function() {
+    
+    
+    /*app.state.dialog = new ENGINE.Dialog("Ooh! I'm dead.", 1 + app.character, function() {
 
-    app.totalPlays += 1;
-    app.totalPoints += Number.isInteger(app.state.points) ? app.state.points : 0;
+      app.totalPlays += 1;
+      app.totalPoints += Number.isInteger(app.state.points) ? app.state.points : 0;
 
-    localStorage.setItem("totalPoints", app.totalPoints);
-    localStorage.setItem("totalPlays", app.totalPlays);
+      localStorage.setItem("totalPoints", app.totalPoints);
+      localStorage.setItem("totalPlays", app.totalPlays);
 
-    app.state.resetGame();
-    }, 1.25);
+      app.state.resetGame();
+    }, 1.25);*/
+
+    app.state.dialog = new ENGINE.Dialog("Ooh! I'm dead. Press key to continue.", 1 + app.character, function() {
+
+      app.totalPlays += 1;
+      app.totalPoints += Number.isInteger(app.state.points) ? app.state.points : 0;
+
+      localStorage.setItem("totalPoints", app.totalPoints);
+      localStorage.setItem("totalPlays", app.totalPlays);
+      app.level = 0;
+      app.state.resetGame();
+    }, 1.25, 8, function() {
+      app.state.player.lifes++;
+      app.state.player.isDead = false;
+    })
   },
 
   create: function() {
@@ -76,7 +91,7 @@ ENGINE.Game = {
   },
 
   changeMaze: function() {
-    app.roomNumber++;
+    app.level++;
 
     this.mazeX = 0;
     this.mazeY = 0;
@@ -107,7 +122,7 @@ ENGINE.Game = {
 
     this.changeRoom(this.maze.entry[0], this.maze.entry[1]+1, 2, true);
     
-    if(app.roomNumber == 1) {
+    if(app.level == 1) {
       this.dialog = new ENGINE.Dialog("My brave knight! Find the way in this maze of dungeons.", 6, null, 0.5);
     }
     else {
@@ -386,31 +401,6 @@ ENGINE.Game = {
     this.HudBuffer.ctx.drawImage(this.mazeBuffer, dx,dy);
     this.HudBuffer.ctx.drawImage(this.mazeFogBuffer, dx,dy);
 
-
-/*
-
-    this.buffer.ctx.fillStyle = app.bgColor;
-    this.buffer.ctx.fillRect(0, 0, roomWidth, ENGINE.Tileset.height + 8);
-
-    ENGINE.Font.setColor("#ff0000");
-    ENGINE.Font.text(this.buffer.ctx, margin, margin, String.fromCharCode(3));
-    ENGINE.Font.setColor();
-    ENGINE.Font.text(this.buffer.ctx, margin + ENGINE.Font.size+4, margin, "" + this.player.lifes);
-
-    ENGINE.Font.setColor();
-
-    var points = "" + this.points;
-    var str = "" + points;
-    ENGINE.Font.text(this.buffer.ctx, roomWidth - margin - ENGINE.Font.size*str.length, margin, str);
-  
-    ENGINE.Font.setColor("#29adff");
-    ENGINE.Font.text(this.buffer.ctx, roomWidth - margin - ENGINE.Font.size*(str.length+1)-2, margin, String.fromCharCode(228));
-
-    var dx = Math.floor((roomWidth - this.mazeBuffer.width) / 2);
-    var dy = ENGINE.Tileset.height - this.mazeBuffer.height;
-    this.buffer.ctx.drawImage(this.mazeBuffer, dx,dy);
-    this.buffer.ctx.drawImage(this.mazeFogBuffer, dx,dy);*/
-
 },
 
 
@@ -614,11 +604,12 @@ ENGINE.Game = {
     }
     // GAMEPLAY
     else {
-      this.renderRoom(this.buffer, this.room);
+      this.buffer.ctx.fillStyle = app.bgColor;
+      this.buffer.ctx.fillRect(0,0, this.buffer.width, this.buffer.height);
 
+      this.renderRoom(this.buffer, this.room);
       // HUD
       this.buffer.ctx.drawImage(this.HudBuffer, 0,0, this.HudBuffer.width, this.HudBuffer.height);
-
 
       // Particles
       for(var i in this.particles) {
@@ -634,6 +625,19 @@ ENGINE.Game = {
         }
       }
 
+    }
+
+    if(!this.flash) {
+      this.buffer.ctx.fillStyle = app.bgColor;
+      this.buffer.ctx.fillRect(0,this.buffer.height - ENGINE.Tileset.height, this.buffer.width, this.buffer.height);
+
+      var str = "Level " + app.level;
+      var dx = Math.floor((this.buffer.width - ENGINE.Font.size * str.length) / 2);
+      var dy = this.buffer.height - ENGINE.Font.size - 4;
+
+      ENGINE.Font.setImage(app.images.font);
+      ENGINE.Font.setColor();
+      ENGINE.Font.text(this.buffer.ctx, dx, dy, str);
     }
     
     if(this.dialog) {
@@ -656,7 +660,7 @@ ENGINE.Game = {
   initBuffer: function() {
     this.buffer = document.createElement('canvas');
     this.buffer.width = (app.settings.room.width + 2) * ENGINE.Tileset.width;
-    this.buffer.height = (app.settings.room.height + 3 + 1) * ENGINE.Tileset.height;
+    this.buffer.height = (app.settings.room.height + 3 + 2) * ENGINE.Tileset.height;
     this.buffer.ctx = this.buffer.getContext("2d");
 
     this.currentRoomBuffer = document.createElement('canvas');

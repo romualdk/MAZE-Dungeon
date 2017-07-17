@@ -1,7 +1,7 @@
 {
-    "name": "qrks.romualdk.mazedungeon",
+    "name": "qrks.romualdk.mazydungeon",
     "version": "1.0.0",
-    "displayName": "MAZE Dungeon",
+    "displayName": "Mazy Dungeon",
     "cordova": {
         "platforms": [
             "android"

@@ -1,8 +1,15 @@
-ENGINE.Dialog = function(text, portrait, next, wait) {
+ENGINE.Dialog = function(text, portrait, next, wait, countdown, onInterrupt) {
     ENGINE.Font.setImage(app.images.fontd);
 
     this.width = (app.settings.room.width+1)*2;
     this.height = 4;
+
+    if(countdown > 0) {
+        this.countdown = countdown;
+        this.countdownTotal = this.countdown;
+        this.onInterrupt = onInterrupt;
+        this.height += 1;
+    }
 
 
     if(portrait > 0) {
@@ -61,6 +68,19 @@ ENGINE.Dialog.prototype.step = function(dt) {
 
         }
     }
+    else if(this.countdown > 0) {
+        this.countdown -= dt;
+
+        if(this.countdown < 0) {
+            this.countdown = 0;
+
+            if(this.next) {
+                this.next();
+            }
+        }
+    }
+
+    
 
     if(app.controls.any() && this.active) {
         this.currentChunk++;
@@ -74,21 +94,26 @@ ENGINE.Dialog.prototype.step = function(dt) {
         this.active = 0;
         ENGINE.Font.setImage(app.images.font);
 
-        if(this.next) {
+        if(this.onInterrupt) {
+            this.onInterrupt();
+        }
+        else if(this.next) {
             this.next();
         }
 
         return false;
     }
 
+    if(!this.onInterrupt) {
+        this.flashTime += 3*dt;
 
-    this.flashTime += 3*dt;
+        if(this.flashTime > 4) {
+            this.flashTime = this.flashTime % 4;
+        }
 
-    if(this.flashTime > 4) {
-        this.flashTime = this.flashTime % 4;
+        this.renderFlash();
     }
-
-    this.renderFlash();
+    
 
     return true;
 },
@@ -113,6 +138,17 @@ ENGINE.Dialog.prototype.render = function(buffer) {
     }
 
     buffer.ctx.drawImage(this.bg, sx,sy, w,h, dx,dy, w,h);
+
+    if(this.countdown > 0) {
+        var x = ENGINE.Font.size + 4;
+        var y = this.bg.height - ENGINE.Font.size*2 + 2;
+        var baseW = this.bg.width - ENGINE.Font.size*2 - 8;
+        var w = Math.floor(this.countdown / this.countdownTotal * baseW);
+        var h = 4;
+
+        buffer.ctx.fillStyle = "#FF0000";
+        buffer.ctx.fillRect(dx + x, dy + y, w, h);
+    }
 },
 
 ENGINE.Dialog.prototype.renderFlash = function() {

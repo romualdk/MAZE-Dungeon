@@ -4,6 +4,11 @@ var app = new PLAYGROUND.Application({
   scale: 1,
   preferedAudioFormat: "mp3",
 
+  character: 0,
+  level: 0,
+  totalPoints: 0,
+  totalPlays: 0,
+
   settings: {
     room: {
       width: 7,
@@ -147,7 +152,7 @@ var app = new PLAYGROUND.Application({
   resize: function() {
     this.bufferMargin = ENGINE.Tileset.width;
     this.bufferWidth = (app.settings.room.width + 2) * ENGINE.Tileset.width;
-    this.bufferHeight = (app.settings.room.height + 3 + 1) * ENGINE.Tileset.height;
+    this.bufferHeight = (app.settings.room.height + 3 + 2) * ENGINE.Tileset.height;
 /*
     var spaceWidth = Math.floor((this.width - 2*this.bufferMargin) / ENGINE.Tileset.width) * ENGINE.Tileset.width;
     var spaceHeight = Math.floor((this.height - 2*this.bufferMargin) / ENGINE.Tileset.height) * ENGINE.Tileset.height;

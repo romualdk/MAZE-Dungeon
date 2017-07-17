@@ -21,9 +21,9 @@ Eventual platforms:  iOS, Facebook? Other?
 - ~~Change logo (name) to mazy dungeon~~
 - ~~Change dialog positioning (now it covers player)~~
 - Change icon
-- Message about current level and max reached level
-- After death continue message (can continue game in current level - but have to watch ad)
-- Progess state save (ie after every 5 levels)
+- ~~Message about current level~~
+- ~~After death continue message (can continue game in current level - but have to watch ad) // Message done - no ad no ad watching~~
+- Progess state save (ie after every 3 levels) and level selection screen
 - Progression - more difficult maze
 - Boss fight
 - Minion fight??? Random minions in maze
