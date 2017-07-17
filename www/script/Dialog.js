@@ -104,7 +104,13 @@ ENGINE.Dialog.prototype.render = function(buffer) {
     var w = this.bg.width;
     var h = this.bg.height;
     var dx = Math.floor((buffer.width - w) / 2);
-    var dy = Math.floor((buffer.height - h) / 2);
+
+    if(app.state.player.ry <= Math.floor(buffer.height / 2)) {
+        var dy = app.state.player.ry + app.state.player.height + 8;
+    }
+    else {
+        var dy = app.state.player.ry - h;
+    }
 
     buffer.ctx.drawImage(this.bg, sx,sy, w,h, dx,dy, w,h);
 },

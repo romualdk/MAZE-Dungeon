@@ -18,8 +18,8 @@ Platforms: Web, Android
 Eventual platforms:  iOS, Facebook? Other?
 
 ### TO DO
-- Change logo (name) to mazy dungeon
-- Change dialog positioning (now it covers player)
+- ~~Change logo (name) to mazy dungeon~~
+- ~~Change dialog positioning (now it covers player)~~
 - Change icon
 - Message about current level and max reached level
 - After death continue message (can continue game in current level - but have to watch ad)
