@@ -23,11 +23,11 @@ Eventual platforms:  iOS, Facebook? Other?
 - Change icon
 - ~~Message about current level~~
 - ~~After death continue message (can continue game in current level - but have to watch ad) // Message done - no ad no ad watching~~
-- Grave stone after death
+- ~~Grave stone after death~~
+- Minion fight??? Random minions in maze
 - Progess state save (ie after every 3 levels) and level selection screen
 - Progression - more difficult maze
 - Boss fight
-- Minion fight??? Random minions in maze
 - Admob ads
 - In-app purchase - buy all characters
 - High score (ever and weekly, daily) - google play game service
