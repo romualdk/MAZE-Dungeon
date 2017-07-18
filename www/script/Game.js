@@ -73,12 +73,22 @@ ENGINE.Game = {
 
       localStorage.setItem("totalPoints", app.totalPoints);
       localStorage.setItem("totalPlays", app.totalPlays);
+
+      app.putGrave(app.state.player.x, app.state.player.y);
+
       app.level = 0;
       app.state.resetGame();
-    }, 1.25, 8, function() {
+
+
+
+    }, 1.25, 5, function() {
       app.state.player.lifes++;
       app.state.player.isDead = false;
-    })
+
+      app.state.renderHUD();
+
+      app.putGrave(app.state.player.x, app.state.player.y);
+    }, 0.75)
   },
 
   create: function() {
@@ -93,6 +103,7 @@ ENGINE.Game = {
   changeMaze: function() {
     app.level++;
 
+    app.mazepath = [];
     this.mazeX = 0;
     this.mazeY = 0;
 
@@ -139,7 +150,9 @@ ENGINE.Game = {
     var id = x + "x" + y;
 
     if(typeof(this.rooms[id]) == "undefined") {
+      app.mazepath.push(id);
       this.rooms[id] = new ENGINE.Room(app.settings.room.width, app.settings.room.height, room.doors, oppositeDoor, this.maze, x, y);
+      
     }
     else {
       this.rooms[id].shiftDoorsTo(oppositeDoor);

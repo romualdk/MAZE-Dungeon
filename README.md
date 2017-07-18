@@ -23,6 +23,7 @@ Eventual platforms:  iOS, Facebook? Other?
 - Change icon
 - ~~Message about current level~~
 - ~~After death continue message (can continue game in current level - but have to watch ad) // Message done - no ad no ad watching~~
+- Grave stone after death
 - Progess state save (ie after every 3 levels) and level selection screen
 - Progression - more difficult maze
 - Boss fight

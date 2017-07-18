@@ -9,6 +9,21 @@ var app = new PLAYGROUND.Application({
   totalPoints: 0,
   totalPlays: 0,
 
+  mazepath: [],
+  graves: [],
+
+  putGrave: function(x, y) {
+    var id = this.mazepath.join("-") + "_" + x + 'x' + y;
+    if(this.graves.indexOf(id) < 0) {
+      this.graves.push(id);
+    }
+  },
+
+  isGrave: function(x, y) {
+    var id = this.mazepath.join("-") + "_" + x + 'x' + y;
+    return this.graves.indexOf(id) >= 0 ? true : false;
+  },
+
   settings: {
     room: {
       width: 7,

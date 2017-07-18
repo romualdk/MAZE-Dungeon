@@ -1,8 +1,15 @@
-ENGINE.Dialog = function(text, portrait, next, wait, countdown, onInterrupt) {
+ENGINE.Dialog = function(text, portrait, next, wait, countdown, onInterrupt, basicInactivity) {
     ENGINE.Font.setImage(app.images.fontd);
 
     this.width = (app.settings.room.width+1)*2;
     this.height = 4;
+
+    if(typeof(basicInactivity) !== "undefined") {
+        this.basicInactivity = wait + basicInactivity
+    }
+    else {
+        this.basicInactivity = 0;
+    }
 
     if(countdown > 0) {
         this.countdown = countdown;
@@ -79,10 +86,17 @@ ENGINE.Dialog.prototype.step = function(dt) {
             }
         }
     }
-
     
+    if(this.basicInactivity > 0) {
+        this.basicInactivity -= dt;
+        
 
-    if(app.controls.any() && this.active) {
+        if(this.basicInactivity < 0) {
+            this.basicInactivity = 0;
+        }
+    }
+    
+    if(app.controls.any() && this.active && this.basicInactivity == 0) {
         this.currentChunk++;
         ENGINE.Font.setImage(app.images.fontd);
         this.renderMessage();
