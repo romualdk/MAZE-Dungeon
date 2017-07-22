@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="48"
+   height="48"
+   viewBox="0 0 12.7 12.7"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="ic_android.svg"
+   inkscape:export-filename="C:\Users\romualdk\Desktop\icons\ic_android_32.png"
+   inkscape:export-xdpi="80.842049"
+   inkscape:export-ydpi="80.842049"
+   inkscape:version="0.92.0 r15299">
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4654">
+      <stop
+         style="stop-color:#0087dc;stop-opacity:1;"
+         offset="0"
+         id="stop4650" />
+      <stop
+         style="stop-color:#0087dc;stop-opacity:0;"
+         offset="1"
+         id="stop4652" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4654"
+       id="linearGradient4656"
+       x1="24"
+       y1="24"
+       x2="43"
+       y2="25.5"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="4"
+     inkscape:cx="76.266369"
+     inkscape:cy="13.320076"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4485"
+       spacingx="0.52916667"
+       spacingy="0.52916667"
+       empspacing="4" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-284.29998)">
+    <path
+       inkscape:connector-curvature="0"
+       id="path4524"
+       d="m 1.8520826,285.62289 h 8.9958334 c 0.293158,0 0.529167,0.23601 0.529167,0.52917 v 8.99583 c 0,0.29316 -0.236009,0.52917 -0.529167,0.52917 H 1.8520826 c -0.2931579,0 -0.5291659,-0.23601 -0.5291659,-0.52917 v -8.99583 c 0,-0.29316 0.236008,-0.52917 0.5291659,-0.52917 z"
+       style="fill:#89d2ff;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       style="fill:#007bc8;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1.3229166,294.88331 v 0.26459 c 0,0.29316 0.2360088,0.52916 0.5291667,0.52916 h 8.9958337 c 0.293158,0 0.529166,-0.236 0.529166,-0.52916 v -0.26459 c 0,0.29316 -0.236008,0.52917 -0.529166,0.52917 H 1.8520833 c -0.2931579,0 -0.5291667,-0.23601 -0.5291667,-0.52917 z"
+       id="path4557"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:url(#linearGradient4656);fill-opacity:1;stroke:none;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 34 8 L 12 36 L 19 43 L 41 43 C 42.107999 43 43 42.108006 43 41 L 43 17 L 34 8 z "
+       id="path4626"
+       transform="matrix(0.26458333,0,0,0.26458333,0,284.29998)" />
+    <image
+       y="286.41666"
+       x="2.1166666"
+       id="image4499"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAWVJREFU
+OI2lUyFvwkAYfSxUdLoCM0KyIBCIGjJVg5qh21hat8r9BBzJzGw1kmKAhWzgSRYQJBNUoGeYaRZM
+TRETb6LcraVhGdkzvffd9953931XIAFV06lqOv/KM1A1nQwDikSGAdlDiu8bnGRcJgV4hoLI9YFJ
+AQAQuT48Q5H8d4Mjkdu/gmcoAIDV6iyVWK1+AADuZl/YbvyULmXAVp8MAz7d1OJ1qx+vw4Bs9Q/3
+wLFNljrLmDy+Zt13sVJnCcc2s5OYzReczRdUNZ3tcpPsIa66m0S73KSq6RR5QpcX1UXAMxTcXo+A
+RoDT80sAQPQe4AEFVJ9rsqBjm+wOxjl5hfvPC9kkIY5cH5Hrx0aNIN5L5Kbg2CYrI8pHI3hlRDq2
+KeOCC50cR7K7Vr2IN+slVaA2vMJwupZcjDK/fxKrXsRwuoaFH4GM7b5JnCSFANAdjOWpths/l3w0
+Yk/kHsTRf+F/8A3dp9Ihhr3J5wAAAABJRU5ErkJggg==
+"
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="8.4666662"
+       width="8.4666662" />
+  </g>
+</svg>
