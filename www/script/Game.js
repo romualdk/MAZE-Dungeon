@@ -143,6 +143,12 @@ ENGINE.Game = {
 
 
   changeRoom: function(x, y, door, isStart = false) {
+
+    admob.requestInterstitialAd({
+      autoShowInterstitial: true
+    });
+
+
     this.particles = [];
 
     var room = ENGINE.Maze.room(this.maze, x, y);

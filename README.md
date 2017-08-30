@@ -5,6 +5,7 @@ A game about finding a way through a maze of dungeons.
 
 Rooms have spikes and doors where player has to use a switch to open certain door. Player has to avoid spikes - has info like in minesweeper (number of spikes near floor tile). The room is covered with fog of war - discovering floor tiles and collecting coins gives points.
 
+
 http://romualdk.github.io/maze-dungeon/
 
 ![alt text](https://raw.githubusercontent.com/romualdk/mazy-dungeon/master/other/preview2x.png "Mazy Dungeon")
@@ -13,7 +14,7 @@ CURRENT STATE
 -------------
 Fully playable version.
 
-Platforms: Web, Android
+Platforms: Web, Android (via Phonegap)
 
 Eventual platforms:  iOS, Facebook? Other?
 
@@ -115,3 +116,10 @@ CREDITS
 - Door sound: "sfx_sound_mechanicalnoise4" by Juhani Junkala "The Essential Retro Video Game Sound Effects Collection"
 - Hurt sound: "sfx_sounds_damage1" by Juhani Junkala "The Essential Retro Video Game Sound Effects Collection"
 - Coin sound: "sfx_coin_double3" by Juhani Junkala "The Essential Retro Video Game Sound Effects Collection"
+
+
+
+Usage
+    
+setx path "%path%;%appdata%\npm\"
+

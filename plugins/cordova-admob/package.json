@@ -1,0 +1,79 @@
+{
+  "name": "cordova-admob",
+  "version": "4.1.16",
+  "description": "Google AdMob Ads plugin for Cordova, Phonegap, Ionic/Angular and Intel XDK. Monetize your app with one javascript line. Android SDK v7.5, iOS SDK v7.3.1. With support for tappx and auto-detect internet connection.",
+  "cordova": {
+    "id": "cordova-admob",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/appfeel/admob-google-cordova.git"
+  },
+  "keywords": [
+    "ad",
+    "ads",
+    "admob",
+    "google",
+    "advertising",
+    "advertisment",
+    "publicity",
+    "earn",
+    "win",
+    "play",
+    "services",
+    "iad",
+    "flurry",
+    "monetization",
+    "money",
+    "appfeel",
+    "tappx",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=4.0.0"
+    }
+  ],
+  "author": {
+    "name": "AppFeel"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/appfeel/admob-google-cordova/issues"
+  },
+  "homepage": "https://github.com/appfeel/admob-google-cordova#readme",
+  "gitHead": "d0c2ee406d987494fa76eb2880ba65d90f4b2fbb",
+  "_id": "cordova-admob@4.1.16",
+  "scripts": {},
+  "_shasum": "a2c1d9516518d157660524cb9d5549a3ee046d97",
+  "_from": "cordova-admob@latest",
+  "_resolved": "https://registry.npmjs.org/cordova-admob/-/cordova-admob-4.1.16.tgz",
+  "_npmVersion": "3.10.7",
+  "_nodeVersion": "4.4.2",
+  "_npmUser": {
+    "name": "appfeel",
+    "email": "info@appfeel.com"
+  },
+  "maintainers": [
+    {
+      "name": "appfeel",
+      "email": "info@appfeel.com"
+    }
+  ],
+  "dist": {
+    "shasum": "a2c1d9516518d157660524cb9d5549a3ee046d97",
+    "tarball": "https://registry.npmjs.org/cordova-admob/-/cordova-admob-4.1.16.tgz"
+  },
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/cordova-admob-4.1.16.tgz_1477733287428_0.49909365572966635"
+  },
+  "directories": {}
+}

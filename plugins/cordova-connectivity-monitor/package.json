@@ -1,0 +1,67 @@
+{
+  "name": "cordova-connectivity-monitor",
+  "version": "1.2.2",
+  "description": "Connectivity status monitoring. Detects if there is WIFI/3G/EDGE/CDMA available.",
+  "cordova": {
+    "id": "cordova-connectivity-monitor",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/appfeel/connectivity-monitor-cordova.git"
+  },
+  "keywords": [
+    "connectivity",
+    "network state",
+    "net state",
+    "net",
+    "monitoring",
+    "monitor",
+    "net status",
+    "reachability",
+    "appfeel",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=2.9"
+    }
+  ],
+  "author": {
+    "name": "AppFeel"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/appfeel/connectivity-monitor-cordova/issues"
+  },
+  "homepage": "https://github.com/appfeel/connectivity-monitor-cordova#readme",
+  "gitHead": "2ea4d6cc3a29d0fa651e35d3695e810645a71995",
+  "_id": "cordova-connectivity-monitor@1.2.2",
+  "scripts": {},
+  "_shasum": "ae863e9606604b29482b516fd84f26687a21053d",
+  "_from": "cordova-connectivity-monitor@latest",
+  "_npmVersion": "2.10.1",
+  "_nodeVersion": "0.12.4",
+  "_npmUser": {
+    "name": "appfeel",
+    "email": "info@appfeel.com"
+  },
+  "maintainers": [
+    {
+      "name": "appfeel",
+      "email": "info@appfeel.com"
+    }
+  ],
+  "dist": {
+    "shasum": "ae863e9606604b29482b516fd84f26687a21053d",
+    "tarball": "https://registry.npmjs.org/cordova-connectivity-monitor/-/cordova-connectivity-monitor-1.2.2.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/cordova-connectivity-monitor/-/cordova-connectivity-monitor-1.2.2.tgz"
+}
