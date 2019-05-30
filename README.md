@@ -13,11 +13,7 @@ Made with http://playgroundjs.com/
 
 CURRENT STATE
 -------------
-Fully playable version.
-
-Platforms: Web, Android (via Phonegap)
-
-Eventual platforms:  iOS, Facebook? Other?
+Fully playable version. But no bosses, etc., so rather boring ;-).
 
 ### TO DO
 - ~~Change logo (name) to mazy dungeon~~
@@ -30,80 +26,7 @@ Eventual platforms:  iOS, Facebook? Other?
 - Progess state save (ie after every 3 levels) and level selection screen
 - Progression - more difficult maze
 - Boss fight
-- Admob ads
-- In-app purchase - buy all characters
 - High score (ever and weekly, daily) - google play game service
-        
-### EVENTUAL EXTRAS
-- Developer brand
-- Website
-- Free graphics (opengameart)
-- Online map generator
-- Online minecraft maze map generator
-
-BUSINESS KIT
-------------
-### LIFECYCLE
-1. **Concepting (DONE)**
-2. **Testing (IN PROGRESS)**
-   - Name
-   - Icon
-   - Tell friends and family
-3. **Launching**
-   - App store listing
-      * high quality screenshots
-      * video
-      * good copy and right keywords
-   - Cross-promotions
-   - Social media and blogs
-4. **Accelerating**
-   - Featuring on the app stores
-   - Respond to user feedback and fix bugs quickly
-   - License your app to a publishing house
-5. **Leveling**
-   - Run paid in-app ad campaigns
-   - User remarketing to boost engagemenet and revenue
-6. **Declining**
-
-### KEY QUESTIONS AND ANSWERS
-
-1. **Audience**
-
-   Players who likes puzzles, old style games with 8bit graphics - pixel art.
-2. **Market trends**
-
-   ???
-3. **Something new?**
-
-   Combines minesweeper with dungeon crawler and classic RPG (no elements yet - but can be included in fights)
-4. **User experience**
-5. **Funding**
-
-   Self-funding / No-funding
-6. **User interface best practices**
-   - open quickly
-   - high quality graphics
-   - multiple devices
-   - multiple versions
-   - density-independent units
-7. **Storing data**
-
-   localStorage
-8. **Permissions**
-   - location: NO
-   - contacts: NO
-   - device IMEI: NO
-9. **Testing**
-10. **Increase app engagement and installs**
-   - over-the-air installs (button on webpage)
-11. **Monetization**
-   - free app: YES
-   - in-app purchases: unlock all characters
-   - ads: fullscreen ad between levels (ie. after 5), also after death - watch ad to continue
-12. **Localization**
-
-   OPTIONAL
-
 
 
 CREDITS
@@ -117,10 +40,4 @@ CREDITS
 - Door sound: "sfx_sound_mechanicalnoise4" by Juhani Junkala "The Essential Retro Video Game Sound Effects Collection"
 - Hurt sound: "sfx_sounds_damage1" by Juhani Junkala "The Essential Retro Video Game Sound Effects Collection"
 - Coin sound: "sfx_coin_double3" by Juhani Junkala "The Essential Retro Video Game Sound Effects Collection"
-
-
-
-Usage
-    
-setx path "%path%;%appdata%\npm\"
 
