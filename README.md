@@ -5,10 +5,11 @@ A game about finding a way through a maze of dungeons.
 
 Rooms have spikes and doors where player has to use a switch to open certain door. Player has to avoid spikes - has info like in minesweeper (number of spikes near floor tile). The room is covered with fog of war - discovering floor tiles and collecting coins gives points.
 
-
-http://romualdk.github.io/mazy-dungeon/
+http://romualdk.github.io/games/2018/mazy-dungeon/
 
 ![alt text](https://raw.githubusercontent.com/romualdk/mazy-dungeon/master/other/preview2x.png "Mazy Dungeon")
+
+Made with http://playgroundjs.com/
 
 CURRENT STATE
 -------------
